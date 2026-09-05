@@ -1,0 +1,106 @@
+{
+  "suppliers": [
+    {
+      "id": "sup-001",
+      "name": "Northwind Traders",
+      "contactName": "Alice Renner",
+      "email": "alice@northwind.example",
+      "phone": "+1-555-0101",
+      "address": "12 Harbor Rd, Portland, OR",
+      "createdAt": "2026-01-15T09:00:00.000Z",
+      "updatedAt": "2026-01-15T09:00:00.000Z"
+    },
+    {
+      "id": "sup-002",
+      "name": "Global Parts Co.",
+      "contactName": "Miguel Torres",
+      "email": "miguel@globalparts.example",
+      "phone": "+1-555-0192",
+      "address": "88 Industrial Ave, Austin, TX",
+      "createdAt": "2026-01-16T09:00:00.000Z",
+      "updatedAt": "2026-01-16T09:00:00.000Z"
+    },
+    {
+      "id": "sup-003",
+      "name": "Everstock Supply",
+      "contactName": "Priya Nair",
+      "email": "priya@everstock.example",
+      "phone": "+1-555-0143",
+      "address": "5 Riverside Blvd, Columbus, OH",
+      "createdAt": "2026-01-17T09:00:00.000Z",
+      "updatedAt": "2026-01-17T09:00:00.000Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-001",
+      "name": "Wireless Mouse M1",
+      "sku": "WM-1001",
+      "category": "Electronics",
+      "unit": "pcs",
+      "price": 14.99,
+      "quantity": 42,
+      "reorderLevel": 20,
+      "supplierId": "sup-001",
+      "createdAt": "2026-01-18T09:00:00.000Z",
+      "updatedAt": "2026-01-18T09:00:00.000Z"
+    },
+    {
+      "id": "prod-002",
+      "name": "USB-C Cable 1m",
+      "sku": "CBL-2003",
+      "category": "Electronics",
+      "unit": "pcs",
+      "price": 5.5,
+      "quantity": 8,
+      "reorderLevel": 25,
+      "supplierId": "sup-002",
+      "createdAt": "2026-01-18T09:05:00.000Z",
+      "updatedAt": "2026-01-18T09:05:00.000Z"
+    },
+    {
+      "id": "prod-003",
+      "name": "A4 Copy Paper (Ream)",
+      "sku": "PPR-3050",
+      "category": "Office Supplies",
+      "unit": "ream",
+      "price": 4.25,
+      "quantity": 0,
+      "reorderLevel": 15,
+      "supplierId": "sup-003",
+      "createdAt": "2026-01-19T09:00:00.000Z",
+      "updatedAt": "2026-01-19T09:00:00.000Z"
+    },
+    {
+      "id": "prod-004",
+      "name": "Stainless Steel Water Bottle",
+      "sku": "BTL-4010",
+      "category": "Merchandise",
+      "unit": "pcs",
+      "price": 12,
+      "quantity": 60,
+      "reorderLevel": 20,
+      "supplierId": "sup-001",
+      "createdAt": "2026-01-19T09:10:00.000Z",
+      "updatedAt": "2026-01-19T09:10:00.000Z"
+    }
+  ],
+  "stockLogs": [
+    {
+      "id": "log-001",
+      "productId": "prod-002",
+      "type": "OUT",
+      "quantity": 30,
+      "note": "Bulk order shipped to Client #4471",
+      "createdAt": "2026-02-01T10:00:00.000Z"
+    },
+    {
+      "id": "log-002",
+      "productId": "prod-003",
+      "type": "OUT",
+      "quantity": 15,
+      "note": "Office restock depleted supply",
+      "createdAt": "2026-02-03T14:30:00.000Z"
+    }
+  ]
+}
